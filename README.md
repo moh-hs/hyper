@@ -19,8 +19,8 @@ We test the below on our local ubuntu machine:
 # Under gcp-network/;
 . ./env.sh
 gcloud compute instances create fabriccli \
-	--zone=asia-southeast1-a \
-	--machine-type=e2-standard-16 \
+	--zone=europe-west1-b \
+	--machine-type=e2-standard-4 \
 	--network=${GCP_NETWORK} \
     --image-project=ubuntu-os-cloud \
     --image-family=ubuntu-1804-lts  \
