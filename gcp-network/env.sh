@@ -1,15 +1,15 @@
-export ORDERER_ZONES=( "europe-west1-b" "europe-west1-b" "europe-west1-b" ) # All in SG
-export MACHINE_TYPE="e2-standard-4"
+export ORDERER_ZONES=( "us-west4-b" "us-west4-b" "us-west4-b" ) # All in SG
+export MACHINE_TYPE="e2-standard-8"
 export GCP_NETWORK="firstnetwork"
 export DNS_ZONE="firstmyzone"
 export FIREWALL_RULENAME="firstmyfirewall"
 
 # export PEER_ZONES=( "europe-north1-a" "northamerica-northeast1-a" "europe-north1-a" "northamerica-northeast1-a" "europe-north1-a" "northamerica-northeast1-a" "europe-north1-a" "northamerica-northeast1-a" "europe-north1-a" "northamerica-northeast1-a" )
-export PEER_ZONES=( "europe-west1-b" )
+export PEER_ZONES=( "us-west4-b" )
 
 # All nodes in the same sg region. 
 if [ -z "${SINGLE_REGION}" ]; then
-    export PEER_ZONES=( "europe-west1-b"  "europe-west1-b" "europe-west1-b" "europe-west1-b" )
+    export PEER_ZONES=( "us-west4-b"  "us-west4-b" "us-west4-b" "us-west4-b" )
 fi
 
 export PEER_INSTANCES=( "peer0org1" "peer0org2" "peer0org3" "peer0org4" "peer0org5" "peer0org6" "peer0org7" "peer0org8" "peer0org9" )
