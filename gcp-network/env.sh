@@ -1,8 +1,8 @@
 export ORDERER_ZONES=( "us-west4-b" "us-west4-b" "us-west4-b" ) # All in SG
 export MACHINE_TYPE="e2-standard-8"
-export GCP_NETWORK="firstnetwork"
-export DNS_ZONE="firstmyzone"
-export FIREWALL_RULENAME="firstmyfirewall"
+export GCP_NETWORK="network"
+export DNS_ZONE="myzone"
+export FIREWALL_RULENAME="myfirewall"
 
 # export PEER_ZONES=( "europe-north1-a" "northamerica-northeast1-a" "europe-north1-a" "northamerica-northeast1-a" "europe-north1-a" "northamerica-northeast1-a" "europe-north1-a" "northamerica-northeast1-a" "europe-north1-a" "northamerica-northeast1-a" )
 export PEER_ZONES=( "us-west4-b" )
